@@ -1,0 +1,47 @@
+@import'../../../assets/scss/settings.scss';
+
+.UserDetails {
+    text-align: center;
+    color: $blue02;
+    position: relative;
+
+    .imgWrapper {
+        img {
+            border-radius: 50%;
+            border: solid 5px $blue01;
+            margin: 1rem;
+        }
+    }
+
+    .infoText {
+        margin: 1rem 0;
+    }
+
+    .userDetailsLlist {
+        width: 100%;
+        border-bottom: 10px;
+        display: flex;
+        justify-content: space-evenly;
+
+        li {
+            flex: 1;
+            padding: 10px 0;
+            transition: 0.3s;
+            cursor: pointer;
+            background-color: $blue01;
+
+            &:nth-child(2) {
+                margin: 0 1px;
+            }
+
+            &:hover {
+                background-color: $blue02;
+            }
+
+            i {
+                color: $grey01;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

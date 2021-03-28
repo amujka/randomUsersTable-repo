@@ -1,0 +1,7 @@
+@import './variables';
+@mixin min-screen($res) {
+    @media screen and (min-width: $res) {
+        @content;
+    }
+}
+

@@ -1,0 +1,11 @@
+@import'../../../assets/scss/settings.scss';
+.Searchbar {
+    display: flex;
+    align-items: center;
+    input {
+        width: 100%;
+        padding: 0.7rem;
+        outline: none;
+        border: solid $grey03 1px;
+    }
+}

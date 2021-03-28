@@ -1,0 +1,44 @@
+@import '../../../assets/scss/settings.scss';
+
+.NavBtnsWrapper {
+    text-align: center;
+    margin: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $grey01;
+
+    //prev and next buttons
+    button {
+        cursor: pointer;
+        outline: none;
+        border: none;
+        font-weight: bold;
+        padding: 5px;
+        background-color: transparent;
+        color: $grey01;
+        transition: 0.5s;
+
+        &:hover {
+            color: $white;
+        }
+
+        &:disabled {
+            color: gray;
+        }
+    }
+
+    span {
+        padding-right: 5px;
+    }
+
+    select {
+        padding: 5px;
+        outline: none;
+        border: none;
+    }
+
+    @include min-screen(768px) {
+        justify-content: flex-start;
+    }
+}
