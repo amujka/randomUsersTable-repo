@@ -6,7 +6,7 @@ const UserDetails = ({ userDetails }) => {
   const [infoText, setInfoText] = useState(
     `${userDetails.location.city}, ${userDetails.location.country}`
   );
-  //on render show location as default on modal user details card
+  //on render show location as default on modal user details
   useEffect(() => {
     setInfoText(
       `${userDetails.location.city}, ${userDetails.location.country}`
